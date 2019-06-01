@@ -1,0 +1,23 @@
+body {
+  background: #3a2024; }
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold; }
+
+.top-head {
+  background: #fff;
+  padding: 40px; }
+  .top-head img {
+    height: 65px;
+    width: auto; }
+  .top-head .img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
