@@ -14,7 +14,7 @@ gulp.task('copyFiles', function(done){
         .pipe(gulp.dest('dist'));
     gulp.src('README.md')
         .pipe(gulp.dest('dist'));
-    gulp.src('orig-css/reset.css')
+    gulp.src('orig-css/1.reset.css')
         .pipe(gulp.dest('dist/css'));
     done(); 
 });

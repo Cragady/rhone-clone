@@ -18,4 +18,3 @@ Please recreate this email using HTML/CSS to put it on a web page that is respon
 
 * Host on gitpages
 * Send link to github-pages and code repo
-* To: Devyn Bartell (devyn@rhone.con)

@@ -1,8 +1,15 @@
-body {
-  background: #3a2024; }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 h1 {
   font-size: 2.5em;
+  font-weight: bold; }
+
+h2 {
+  font-size: 1.2em;
   font-weight: bold; }
 
 .top-head {
@@ -21,3 +28,94 @@ h1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+
+.container-template, .container-hero, .container-purple {
+  position: relative; }
+  .container-template .text-bubble, .container-hero .text-bubble, .container-purple .text-bubble {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    color: white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .container-template .text-bubble p, .container-hero .text-bubble p, .container-purple .text-bubble p {
+      width: 60%; }
+    .container-template .text-bubble button, .container-hero .text-bubble button, .container-purple .text-bubble button {
+      background: white;
+      height: 60px;
+      width: 55%;
+      margin-top: 40px;
+      border: none;
+      font-weight: bold;
+      font-size: 1.1em; }
+      .container-template .text-bubble button:hover, .container-hero .text-bubble button:hover, .container-purple .text-bubble button:hover {
+        opacity: 0.6; }
+  .container-template .img-container, .container-hero .img-container, .container-purple .img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .container-template .img-container img, .container-hero .img-container img, .container-purple .img-container img {
+      width: 100%;
+      height: auto; }
+
+.container-hero .img-container {
+  background: black; }
+  .container-hero .img-container img {
+    opacity: 0.7; }
+
+.hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  padding: 7% 10% 7% 10%;
+  font-weight: 100;
+  font-size: 1.6em;
+  line-height: 1.4; }
+
+.container-purple {
+  background: rgba(172, 171, 171, 0.055); }
+  .container-purple .img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+.white-front {
+  background: url("../images/purple-texture.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: contain;
+  font-weight: bold;
+  font-size: 2.5em;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+  padding: 10%; }
+  .white-front .lav-shirt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    border: 4px solid white;
+    -webkit-box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.042);
+    box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.042); }
+  .white-front .lav-col {
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+  .white-front .img-hid {
+    position: absolute;
+    top: 0;
+    visibility: hidden; }
