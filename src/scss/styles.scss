@@ -206,28 +206,37 @@ h2{
 
 .shirts-cause-pushups{
     background: url('../images/bottom-image.jpg');
-    background-size: contain;
+    background-size: cover;
     position: relative;
     display: flex;
     width: 100%;
 
-    .btn-container{
-        position: absolute;
-        display: flex;
-        align-self: center;
-
-        .pushup-button{
-            @extend .hero-button;
-            margin: 0;
-            width: 100%;
-        }
-    }
-
     .img-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
         img{
             width: 100%;
             visibility: hidden;
+        }
+        
+        .btn-container{
+            position: absolute;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            width: 55%;
+            height: 17%;
+
+            .pushup-button{
+                @extend .hero-button;
+                align-items: center;
+                margin: 0;
+                font-size: 1.3em;
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 }

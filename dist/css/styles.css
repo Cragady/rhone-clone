@@ -29,7 +29,7 @@ h2 {
     -ms-flex-align: center;
     align-items: center; }
 
-.hero-button, .container-template .text-bubble button, .container-hero .text-bubble button, .container-purple .text-bubble button, .container-pink .text-bubble button, .container-purple .white-front .lav-col button, .container-pink .white-front .lav-col button, .shirts-cause-pushups .btn-container .pushup-button {
+.hero-button, .container-template .text-bubble button, .container-hero .text-bubble button, .container-purple .text-bubble button, .container-pink .text-bubble button, .container-purple .white-front .lav-col button, .container-pink .white-front .lav-col button, .shirts-cause-pushups .img-container .btn-container .pushup-button {
   background: white;
   height: 60px;
   width: 55%;
@@ -37,7 +37,7 @@ h2 {
   border: none;
   font-weight: bold;
   font-size: 1.1em; }
-  .hero-button:hover, .container-template .text-bubble button:hover, .container-hero .text-bubble button:hover, .container-purple .text-bubble button:hover, .container-pink .text-bubble button:hover, .container-purple .white-front .lav-col button:hover, .container-pink .white-front .lav-col button:hover, .shirts-cause-pushups .btn-container .pushup-button:hover {
+  .hero-button:hover, .container-template .text-bubble button:hover, .container-hero .text-bubble button:hover, .container-purple .text-bubble button:hover, .container-pink .text-bubble button:hover, .container-purple .white-front .lav-col button:hover, .container-pink .white-front .lav-col button:hover, .shirts-cause-pushups .img-container .btn-container .pushup-button:hover {
     opacity: 0.6; }
 
 .container-template, .container-hero, .container-purple, .container-pink {
@@ -188,22 +188,43 @@ h2 {
 
 .shirts-cause-pushups {
   background: url("../images/bottom-image.jpg");
-  background-size: contain;
+  background-size: cover;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%; }
-  .shirts-cause-pushups .btn-container {
-    position: absolute;
+  .shirts-cause-pushups .img-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: center;
-    align-self: center; }
-    .shirts-cause-pushups .btn-container .pushup-button {
-      margin: 0;
-      width: 100%; }
-  .shirts-cause-pushups .img-container img {
-    width: 100%;
-    visibility: hidden; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .shirts-cause-pushups .img-container img {
+      width: 100%;
+      visibility: hidden; }
+    .shirts-cause-pushups .img-container .btn-container {
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: center;
+      align-self: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 55%;
+      height: 17%; }
+      .shirts-cause-pushups .img-container .btn-container .pushup-button {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0;
+        font-size: 1.3em;
+        height: 100%;
+        width: 100%; }
