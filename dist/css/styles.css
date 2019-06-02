@@ -29,9 +29,20 @@ h2 {
     -ms-flex-align: center;
     align-items: center; }
 
-.container-template, .container-hero, .container-purple {
+.hero-button, .container-template .text-bubble button, .container-hero .text-bubble button, .container-purple .text-bubble button, .container-pink .text-bubble button, .container-purple .white-front .lav-col button, .container-pink .white-front .lav-col button, .shirts-cause-pushups .btn-container .pushup-button {
+  background: white;
+  height: 60px;
+  width: 55%;
+  margin-top: 40px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1em; }
+  .hero-button:hover, .container-template .text-bubble button:hover, .container-hero .text-bubble button:hover, .container-purple .text-bubble button:hover, .container-pink .text-bubble button:hover, .container-purple .white-front .lav-col button:hover, .container-pink .white-front .lav-col button:hover, .shirts-cause-pushups .btn-container .pushup-button:hover {
+    opacity: 0.6; }
+
+.container-template, .container-hero, .container-purple, .container-pink {
   position: relative; }
-  .container-template .text-bubble, .container-hero .text-bubble, .container-purple .text-bubble {
+  .container-template .text-bubble, .container-hero .text-bubble, .container-purple .text-bubble, .container-pink .text-bubble {
     position: absolute;
     bottom: 15%;
     left: 5%;
@@ -39,23 +50,13 @@ h2 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .container-template .text-bubble p, .container-hero .text-bubble p, .container-purple .text-bubble p {
+    .container-template .text-bubble p, .container-hero .text-bubble p, .container-purple .text-bubble p, .container-pink .text-bubble p {
       width: 60%; }
-    .container-template .text-bubble button, .container-hero .text-bubble button, .container-purple .text-bubble button {
-      background: white;
-      height: 60px;
-      width: 55%;
-      margin-top: 40px;
-      border: none;
-      font-weight: bold;
-      font-size: 1.1em; }
-      .container-template .text-bubble button:hover, .container-hero .text-bubble button:hover, .container-purple .text-bubble button:hover {
-        opacity: 0.6; }
-  .container-template .img-container, .container-hero .img-container, .container-purple .img-container {
+  .container-template .img-container, .container-hero .img-container, .container-purple .img-container, .container-pink .img-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .container-template .img-container img, .container-hero .img-container img, .container-purple .img-container img {
+    .container-template .img-container img, .container-hero .img-container img, .container-purple .img-container img, .container-pink .img-container img {
       width: 100%;
       height: auto; }
 
@@ -81,9 +82,9 @@ h2 {
   font-size: 1.6em;
   line-height: 1.4; }
 
-.container-purple {
+.container-purple, .container-pink {
   background: rgba(172, 171, 171, 0.055); }
-  .container-purple .img-container {
+  .container-purple .img-container, .container-pink .img-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -91,12 +92,47 @@ h2 {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .container-purple .white-front, .container-pink .white-front {
+    background: url("../images/purple-texture.jpg");
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: contain;
+    font-weight: bold;
+    font-size: 2.5em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(0, 0, 0, 0.2);
+    padding: 10%; }
+    .container-purple .white-front .lav-shirt, .container-pink .white-front .lav-shirt {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      bottom: 6%;
+      width: auto;
+      max-width: 45%;
+      max-height: 70%;
+      border: 4px solid white;
+      -webkit-box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.042);
+      box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.042); }
+    .container-purple .white-front .lav-col, .container-pink .white-front .lav-col {
+      -ms-flex-item-align: end;
+      align-self: flex-end; }
+      .container-purple .white-front .lav-col button, .container-pink .white-front .lav-col button {
+        background: black;
+        color: white;
+        font-size: 0.5em;
+        width: 100%; }
 
-.white-front {
-  background: url("../images/purple-texture.jpg");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.container-pink .img-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.container-pink .white-front {
+  background: url("../images/pink-texture.jpg");
   background-size: contain;
   font-weight: bold;
   font-size: 2.5em;
@@ -104,18 +140,64 @@ h2 {
   background-clip: text;
   color: rgba(0, 0, 0, 0.2);
   padding: 10%; }
-  .white-front .lav-shirt {
+  .container-pink .white-front .lav-shirt {
+    margin-left: 40%; }
+
+.banner-of-benefits {
+  position: relative;
+  width: 100%;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5%;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .banner-of-benefits .img-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
-    border: 4px solid white;
-    -webkit-box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.042);
-    box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.042); }
-  .white-front .lav-col {
-    -ms-flex-item-align: end;
-    align-self: flex-end; }
-  .white-front .img-hid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: auto; }
+    .banner-of-benefits .img-container p {
+      text-align: center;
+      font-size: 1em;
+      color: white;
+      margin-top: 5px;
+      z-index: 1; }
+    .banner-of-benefits .img-container img {
+      height: auto;
+      width: 70%; }
+
+.shirts-cause-pushups {
+  background: url("../images/bottom-image.jpg");
+  background-size: contain;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .shirts-cause-pushups .btn-container {
     position: absolute;
-    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center; }
+    .shirts-cause-pushups .btn-container .pushup-button {
+      margin: 0;
+      width: 100%; }
+  .shirts-cause-pushups .img-container img {
+    width: 100%;
     visibility: hidden; }
