@@ -146,7 +146,8 @@ h2 {
 .banner-of-benefits {
   position: relative;
   width: 100%;
-  background: rgba(120, 113, 143, 0.836);
+  background-image: url("../images/grainy.png");
+  background-color: #675f80;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
