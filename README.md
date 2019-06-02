@@ -2,7 +2,7 @@
 
 ## Display Page
 
-[here](https://cragady.github.io/rhone-clone/dist/index.html) is the display page for the application.
+[Here](https://cragady.github.io/rhone-clone/dist/index.html) is the display page for the application.
 
 https://cragady.github.io/rhone-clone/dist/index.html
 
