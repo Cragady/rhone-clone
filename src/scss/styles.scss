@@ -145,6 +145,7 @@ h2{
 
 .container-pink{
     @extend .container-purple;
+    margin-top: 0!important;
 
     .img-container{
         flex-direction: row;
@@ -227,17 +228,97 @@ h2{
             display: flex;
             align-self: center;
             justify-content: center;
-            width: 55%;
-            height: 17%;
+            width: 50%;
+            height: 18%;
 
             .pushup-button{
                 @extend .hero-button;
                 align-items: center;
                 margin: 0;
-                font-size: 1.3em;
+                font-size: 3.5vw;
+                font-weight: bold;
                 height: 100%;
                 width: 100%;
             }
         }
     }
+}
+
+@media screen and (max-width: 425px){
+    h1{
+        font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container-hero .img-container{
+        overflow: hidden;
+        justify-content: center;
+        max-height: 50vw;
+        width: auto;
+
+        img{
+            align-self: center;
+        }
+    }
+
+    .container-purple{
+        font-size: 2.5vw;
+
+        .white-front{
+            padding: 5% 15% 5% 15%;
+        }
+        
+        .img-container{
+            overflow: hidden;
+            justify-content: center;
+            max-height: 25vw;
+            font-size: 1.5em;
+    
+            .lav-shirt{
+                max-height: 35vw;
+                max-width: 30vw;
+            }
+        }
+    }
+
+    .container-pink{ 
+        // @extend .container-pink;
+        margin-right: 80%;
+        margin-top: 5%;
+        width: 100%;
+        height: 58vw;
+    
+        .white-front{
+            // flex-direction: column-reverse;
+            min-height: 30vw;
+        }
+
+        .img-container .lav-shirt{
+            right: 10%;
+        }
+
+        .lav-col{
+            margin-right: 80%;
+            margin-bottom: -5%;
+        }
+    }
+
+    .shirts-cause-pushups{
+        height: 50vw;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    // .container-purple .img-container .lav-shirt img{
+    //     width: 70%;
+    // }
+}
+
+@media screen and (min-width: 1280){
 }

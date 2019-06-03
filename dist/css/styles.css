@@ -125,23 +125,24 @@ h2 {
         font-size: 0.5em;
         width: 100%; }
 
-.container-pink .img-container {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row; }
-
-.container-pink .white-front {
-  background: url("../images/pink-texture.jpg");
-  background-size: contain;
-  font-weight: bold;
-  font-size: 2.5em;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: rgba(0, 0, 0, 0.2);
-  padding: 10%; }
-  .container-pink .white-front .lav-shirt {
-    margin-left: 40%; }
+.container-pink {
+  margin-top: 0 !important; }
+  .container-pink .img-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .container-pink .white-front {
+    background: url("../images/pink-texture.jpg");
+    background-size: contain;
+    font-weight: bold;
+    font-size: 2.5em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(0, 0, 0, 0.2);
+    padding: 10%; }
+    .container-pink .white-front .lav-shirt {
+      margin-left: 40%; }
 
 .banner-of-benefits {
   position: relative;
@@ -219,13 +220,67 @@ h2 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      width: 55%;
-      height: 17%; }
+      width: 50%;
+      height: 18%; }
       .shirts-cause-pushups .img-container .btn-container .pushup-button {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
         margin: 0;
-        font-size: 1.3em;
+        font-size: 3.5vw;
+        font-weight: bold;
         height: 100%;
         width: 100%; }
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 1.5em; }
+  h2 {
+    font-size: 0.9em; } }
+
+@media screen and (min-width: 768px) {
+  .container-hero .img-container {
+    overflow: hidden;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-height: 50vw;
+    width: auto; }
+    .container-hero .img-container img {
+      -ms-flex-item-align: center;
+      align-self: center; }
+  .container-purple, .container-pink {
+    font-size: 2.5vw; }
+    .container-purple .white-front, .container-pink .white-front {
+      padding: 5% 15% 5% 15%; }
+    .container-purple .img-container, .container-pink .img-container {
+      overflow: hidden;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      max-height: 25vw;
+      font-size: 1.5em; }
+      .container-purple .img-container .lav-shirt, .container-pink .img-container .lav-shirt {
+        max-height: 35vw;
+        max-width: 30vw; }
+  .container-pink {
+    margin-right: 80%;
+    margin-top: 5%;
+    width: 100%;
+    height: 58vw; }
+    .container-pink .white-front {
+      min-height: 30vw; }
+    .container-pink .img-container .lav-shirt {
+      right: 10%; }
+    .container-pink .lav-col {
+      margin-right: 80%;
+      margin-bottom: -5%; }
+  .shirts-cause-pushups {
+    height: 50vw;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden; } }
