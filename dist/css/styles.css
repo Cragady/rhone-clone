@@ -271,7 +271,9 @@ h2 {
         width: auto; }
     .banner-of-benefits .sleeves img {
       height: 13vw;
-      width: auto; } }
+      width: auto; }
+  .shirts-cause-pushups .img-container {
+    width: 100vw; } }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
   h1 {
