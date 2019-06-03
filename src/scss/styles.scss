@@ -333,8 +333,15 @@ h2{
     }
 
     .shirts-cause-pushups{
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
         .img-container{
-            width: 100vw;
+
+            img{
+                width: 100vw;
+            }
         }
     }
 }
@@ -387,7 +394,7 @@ h2{
     .container-hero .img-container{
         overflow: hidden;
         justify-content: center;
-        max-height: 50vw;
+        max-height: 40vw;
         width: auto;
 
         img{
@@ -438,9 +445,15 @@ h2{
     }
 
     .shirts-cause-pushups{
-        height: 50vw;
         justify-content: center;
         align-items: center;
-        overflow-x: hidden;
+        overflow: hidden;
+
+        .img-container{
+
+            img{
+                height: 40vw;
+            }
+        }
     }
 }

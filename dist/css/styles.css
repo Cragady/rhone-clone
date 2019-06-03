@@ -272,8 +272,16 @@ h2 {
     .banner-of-benefits .sleeves img {
       height: 13vw;
       width: auto; }
-  .shirts-cause-pushups .img-container {
-    width: 100vw; } }
+  .shirts-cause-pushups {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden; }
+    .shirts-cause-pushups .img-container img {
+      width: 100vw; } }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
   h1 {
@@ -304,7 +312,7 @@ h2 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    max-height: 50vw;
+    max-height: 40vw;
     width: auto; }
     .container-hero .img-container img {
       -ms-flex-item-align: center;
@@ -336,11 +344,12 @@ h2 {
       margin-right: 80%;
       margin-bottom: -5%; }
   .shirts-cause-pushups {
-    height: 50vw;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    overflow-x: hidden; } }
+    overflow: hidden; }
+    .shirts-cause-pushups .img-container img {
+      height: 40vw; } }
