@@ -279,7 +279,6 @@ h2{
 
             .img-container{
                 overflow: hidden;
-                max-height: 25vw;
             }
 
             .lav-col{
@@ -289,6 +288,17 @@ h2{
 
                     font-size: 4vw;
                 }
+            }
+        }
+    }
+
+    .container-pink{
+
+        .white-front{
+            height: 40vw;
+
+            .lav-shirt{
+                height: 80vw;
             }
         }
     }

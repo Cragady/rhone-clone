@@ -249,11 +249,14 @@ h2 {
   .container-purple .white-front, .container-pink .white-front {
     max-height: 40vw; }
     .container-purple .white-front .img-container, .container-pink .white-front .img-container {
-      overflow: hidden;
-      max-height: 25vw; }
+      overflow: hidden; }
     .container-purple .white-front .lav-col button, .container-pink .white-front .lav-col button {
       width: 25vw;
       font-size: 4vw; }
+  .container-pink .white-front {
+    height: 40vw; }
+    .container-pink .white-front .lav-shirt {
+      height: 80vw; }
   .shirts-cause-pushups {
     height: 40vw; } }
 
