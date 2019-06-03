@@ -245,35 +245,55 @@ h2{
 }
 
 @media screen and (max-width: 424px){
-    .container-purple{
-        justify-content: center;
-        align-items: center;
+    h1{
+        font-size: 5vw;
+    }
 
-        .white-front{
-            color: rgba(0, 0, 0, 0.5);
-            padding: 0 0 5% 0;
-            text-align: center;
-        }
+    h2{
+        font-size: 3vw;
+    }
 
-        .lav-col{
-            margin: 0;
-            z-index: 1;    
-            margin-left: auto;
-            margin-right: auto;        
-        }
+    p{
+        font-size: 2.5vw;
+    }
 
-        .lav-shirt{
-            align-self: center;
+    .container-hero{
+
+        .img-container{
+            height: 40vw;
+            
+            img{
+
+            }
         }
     }
 
-    .container-pink{
-        flex-direction: row-reverse;
+    .hero-button{
+        height: 10vw;
+        width: 55%;
+        margin-top: 5%;
+        font-size: 1.1em;
+    
+    }
 
-        .lav-shirt{
-            position: relative;
-            height: 100%;
+    .container-purple{
+
+        .white-front{
+            max-height: 40vw;
+
+            .lav-col{
+
+                button{
+                    width: 25vw;
+
+                    font-size: 4vw;
+                }
+            }
         }
+    }
+
+    .shirts-cause-pushups{
+        height: 40vw;
     }
 }
 
@@ -379,7 +399,7 @@ h2{
         height: 50vw;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     // .container-purple .img-container .lav-shirt img{

@@ -233,33 +233,26 @@ h2 {
         width: 100%; }
 
 @media screen and (max-width: 424px) {
-  .container-purple, .container-pink {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .container-purple .white-front, .container-pink .white-front {
-      color: rgba(0, 0, 0, 0.5);
-      padding: 0 0 5% 0;
-      text-align: center; }
-    .container-purple .lav-col, .container-pink .lav-col {
-      margin: 0;
-      z-index: 1;
-      margin-left: auto;
-      margin-right: auto; }
-    .container-purple .lav-shirt, .container-pink .lav-shirt {
-      -ms-flex-item-align: center;
-      align-self: center; }
-  .container-pink {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse; }
-    .container-pink .lav-shirt {
-      position: relative;
-      height: 100%; } }
+  h1 {
+    font-size: 5vw; }
+  h2 {
+    font-size: 3vw; }
+  p {
+    font-size: 2.5vw; }
+  .container-hero .img-container {
+    height: 40vw; }
+  .hero-button, .container-template .text-bubble button, .container-hero .text-bubble button, .container-purple .text-bubble button, .container-pink .text-bubble button, .container-purple .white-front .lav-col button, .container-pink .white-front .lav-col button, .shirts-cause-pushups .img-container .btn-container .pushup-button {
+    height: 10vw;
+    width: 55%;
+    margin-top: 5%;
+    font-size: 1.1em; }
+  .container-purple .white-front, .container-pink .white-front {
+    max-height: 40vw; }
+    .container-purple .white-front .lav-col button, .container-pink .white-front .lav-col button {
+      width: 25vw;
+      font-size: 4vw; }
+  .shirts-cause-pushups {
+    height: 40vw; } }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
   h1 {
@@ -329,4 +322,4 @@ h2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    overflow: hidden; } }
+    overflow-x: hidden; } }
