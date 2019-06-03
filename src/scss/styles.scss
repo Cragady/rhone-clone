@@ -260,11 +260,7 @@ h2{
     .container-hero{
 
         .img-container{
-            height: 40vw;
-            
-            img{
-
-            }
+            height: 60vw;
         }
     }
 
@@ -280,6 +276,11 @@ h2{
 
         .white-front{
             max-height: 40vw;
+
+            .img-container{
+                overflow: hidden;
+                max-height: 25vw;
+            }
 
             .lav-col{
 
