@@ -232,11 +232,57 @@ h2 {
         height: 100%;
         width: 100%; }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 424px) {
+  .container-purple, .container-pink {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .container-purple .white-front, .container-pink .white-front {
+      color: rgba(0, 0, 0, 0.5);
+      padding: 0 0 5% 0;
+      text-align: center; }
+    .container-purple .lav-col, .container-pink .lav-col {
+      margin: 0;
+      z-index: 1;
+      margin-left: auto;
+      margin-right: auto; }
+    .container-purple .lav-shirt, .container-pink .lav-shirt {
+      -ms-flex-item-align: center;
+      align-self: center; }
+  .container-pink {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+    .container-pink .lav-shirt {
+      position: relative;
+      height: 100%; } }
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
   h1 {
     font-size: 1.5em; }
   h2 {
-    font-size: 0.9em; } }
+    font-size: 0.8em; }
+  p {
+    font-size: 0.7em; }
+  .hero-button, .container-template .text-bubble button, .container-hero .text-bubble button, .container-purple .text-bubble button, .container-pink .text-bubble button, .container-purple .white-front .lav-col button, .container-pink .white-front .lav-col button, .shirts-cause-pushups .img-container .btn-container .pushup-button {
+    width: 25vw;
+    height: 7vw; }
+  .container-purple, .container-pink {
+    font-size: 1em; }
+    .container-purple .white-front, .container-pink .white-front {
+      padding: 3% 7% 3% 7%;
+      min-height: 35vw; }
+    .container-purple .img-container, .container-pink .img-container {
+      overflow: hidden;
+      max-height: 25vw; }
+      .container-purple .img-container .lav-shirt, .container-pink .img-container .lav-shirt {
+        max-width: 35vw; }
+  .container-pink .white-front {
+    font-size: 6vw; } }
 
 @media screen and (min-width: 768px) {
   .container-hero .img-container {
