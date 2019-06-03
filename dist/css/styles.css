@@ -253,6 +253,8 @@ h2 {
     .container-purple .white-front .lav-col button, .container-pink .white-front .lav-col button {
       width: 25vw;
       font-size: 4vw; }
+  .container-pink .pink-banner {
+    height: 40vw; }
   .container-pink .white-front {
     height: 40vw; }
     .container-pink .white-front .lav-shirt {
