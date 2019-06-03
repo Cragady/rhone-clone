@@ -245,11 +245,13 @@ h2 {
     height: 10vw;
     width: 55%;
     margin-top: 5%;
-    font-size: 1.1em; }
+    font-size: 4vw; }
   .container-purple .white-front, .container-pink .white-front {
     max-height: 40vw; }
     .container-purple .white-front .img-container, .container-pink .white-front .img-container {
       overflow: hidden; }
+    .container-purple .white-front .lav-col h2, .container-pink .white-front .lav-col h2 {
+      font-size: 5vw; }
     .container-purple .white-front .lav-col button, .container-pink .white-front .lav-col button {
       width: 25vw;
       font-size: 4vw; }
@@ -259,6 +261,17 @@ h2 {
     height: 40vw; }
     .container-pink .white-front .lav-shirt {
       height: 80vw; }
+  .banner-of-benefits {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .banner-of-benefits .img-container {
+      font-size: 2vw; }
+      .banner-of-benefits .img-container img {
+        height: 15vw;
+        width: auto; }
+    .banner-of-benefits .sleeves img {
+      height: 13vw;
+      width: auto; }
   .shirts-cause-pushups {
     height: 40vw; } }
 

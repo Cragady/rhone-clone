@@ -268,7 +268,7 @@ h2{
         height: 10vw;
         width: 55%;
         margin-top: 5%;
-        font-size: 1.1em;
+        font-size: 4vw;
     
     }
 
@@ -283,9 +283,12 @@ h2{
 
             .lav-col{
 
+                h2{
+                    font-size: 5vw;
+                }
+
                 button{
                     width: 25vw;
-
                     font-size: 4vw;
                 }
             }
@@ -303,6 +306,28 @@ h2{
 
             .lav-shirt{
                 height: 80vw;
+            }
+        }
+    }
+
+    .banner-of-benefits{
+        justify-content: space-around;
+
+        .img-container{
+            font-size: 2vw;
+
+            img{
+                height: 15vw;
+                width: auto;
+            }
+
+        }
+
+        .sleeves{
+
+            img{
+                height: 13vw;
+                width: auto;
             }
         }
     }
@@ -416,11 +441,4 @@ h2{
         align-items: center;
         overflow-x: hidden;
     }
-
-    // .container-purple .img-container .lav-shirt img{
-    //     width: 70%;
-    // }
-}
-
-@media screen and (min-width: 1280){
 }
